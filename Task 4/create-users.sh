@@ -24,7 +24,6 @@ kubectl config set-credentials ${USER_NAME} --client-certificate=${USER_NAME}.cr
 kubectl config set-context ${USER_NAME}-context --cluster=$(kubectl config view --minify -o jsonpath='{.clusters[0].name}') --user=${USER_NAME}
 
 echo "✅ Пользователь ${USER_NAME} создан"
-echo "📁 Файлы: ${USER_NAME}.key, ${USER_NAME}.crt, ${USER_NAME}.csr"
 
 #!/bin/bash
 # create-devops-engineer.sh
